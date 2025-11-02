@@ -1,0 +1,135 @@
+<!--
+Prototype: FAQ / Internal Support Landing Page
+Company: Adventist Health (internal prototyping)
+Author: ChatGPT (analyst & professor perspective)
+Notes: Single-file prototype for demonstration. Replace placeholder content and links.
+-->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Central de Apoio — Adventist Health (Protótipo)</title>
+  <style>
+    :root{--bg:#f7fafc;--card:#ffffff;--accent:#0b63d6;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+    header{background:linear-gradient(90deg,#0b63d6 0%,#2a9df4 100%);color:#fff;padding:28px}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    .hero{display:flex;gap:20px;align-items:center}
+    .hero h1{margin:0;font-size:28px}
+    .search{margin-top:16px}
+    input[type=text]{width:100%;padding:12px;border-radius:8px;border:1px solid #e6eef9}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    .small{font-size:13px;color:var(--muted)}
+    .faq-list{margin-top:18px}
+    .faq-item{border-bottom:1px solid #f1f5f9;padding:12px 0}
+    .actions{display:flex;gap:8px;margin-top:12px}
+    .btn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+    .secondary{background:transparent;color:var(--accent);border:1px solid rgba(11,99,214,0.12)}
+    footer{padding:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:640px){.hero{flex-direction:column;align-items:flex-start}.hero h1{font-size:22px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="hero">
+        <div>
+          <h1>Central de Apoio — Adventist Health (Protótipo)</h1>
+          <p class="small">Perguntas frequentes, guias rápidos, vídeos e chatbot para apoiar integração e padronização.</p>
+          <div class="search">
+            <input type="text" placeholder="Busque por: processo, sistema, fluxos, 'autenticação'..." id="searchInput">
+          </div>
+        </div>
+        <div style="margin-left:auto;min-width:180px;text-align:right">
+          <div style="background:rgba(255,255,255,0.12);padding:10px;border-radius:10px;display:inline-block">
+            <div style="font-weight:600">Usuário</div>
+            <div class="small">Colaborador - Exemplo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <h3>Onboarding</h3>
+        <p class="small">Passo a passo para novos colaboradores: contratos, acesso aos sistemas, e introdução aos fluxos.</p>
+        <div class="actions"><a class="btn" href="#">Ver guias</a><a class="secondary" href="#">Vídeos</a></div>
+      </div>
+      <div class="card">
+        <h3>Sistemas (Softwares)</h3>
+        <p class="small">Como usar o CRM, SIGA, Portal de Rede e ferramentas internas.</p>
+        <div class="actions"><a class="btn" href="#">Tutoriais</a><a class="secondary" href="#">Cheat sheets</a></div>
+      </div>
+      <div class="card">
+        <h3>Fluxos e Processos</h3>
+        <p class="small">Diagramas, responsáveis e SLAs para cada etapa.</p>
+        <div class="actions"><a class="btn" href="#">Fluxos</a><a class="secondary" href="#">SOPs</a></div>
+      </div>
+      <div class="card">
+        <h3>Chatbot & Aulas</h3>
+        <p class="small">Interaja com o bot para dúvidas rápidas; acesse aulas gravadas e microlearning.</p>
+        <div class="actions"><a class="btn" href="#">Abrir Chat</a><a class="secondary" href="#">Catálogo</a></div>
+      </div>
+    </section>
+
+    <section class="faq-list">
+      <h2 style="margin-top:18px">Perguntas recentes</h2>
+      <div class="card" style="margin-top:12px">
+        <div class="faq-item">
+          <strong>Como solicito acesso ao novo sistema unificado?</strong>
+          <div class="small">Abra um chamado no Service Desk informando cargo, CNPJ/filial e justificativa. Tempo médio: 48h.</div>
+        </div>
+        <div class="faq-item">
+          <strong>Tem modelo de e-mail para comunicação com parceiros?</strong>
+          <div class="small">Sim — em Recursos > Modelos. Use o template 'Comunicado - Unificação de Operação'.</div>
+        </div>
+        <div class="faq-item">
+          <strong>Onde encontro o fluxo de faturamento consolidado?</strong>
+          <div class="small">Na seção 'Fluxos' — documento: "Faturamento_Unificado_v1.pdf".</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:20px;display:grid;grid-template-columns:1fr 320px;gap:16px;">
+      <div>
+        <h2>Recursos rápidos</h2>
+        <ul>
+          <li>Guia de acesso remoto</li>
+          <li>Checklist de turnos e escalas</li>
+          <li>Política de segurança da informação (resumo)</li>
+        </ul>
+      </div>
+
+      <aside class="card">
+        <h3>Chat — Assistente</h3>
+        <p class="small">Bot para dúvidas rápidas. (Protótipo: substitua por integração com OpenAI, Dialogflow ou Rasa)</p>
+        <div style="height:220px;border-radius:8px;background:#f8fafc;padding:10px;overflow:auto">[Chat placeholder — integração necessária]</div>
+        <div style="margin-top:10px;display:flex;gap:8px">
+          <a class="btn" href="#">Abrir Chat</a>
+          <a class="secondary" href="#">Treinamentos</a>
+        </div>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer>
+    Protótipo criado como projeto de extensão — Curso: Análise e Desenvolvimento de Sistemas — Desenvolvido para apresentação interna na Adventist Health
+  </footer>
+
+  <script>
+    // Pequena busca local (protótipo). Substituir por busca real / indexação.
+    const input = document.getElementById('searchInput');
+    input.addEventListener('keydown', (e)=>{
+      if(e.key==='Enter'){
+        alert('Busca (protótipo): ' + input.value + '\nImplemente uma API de busca para resultados reais.');
+      }
+    });
+  </script>
+</body>
+</html>
