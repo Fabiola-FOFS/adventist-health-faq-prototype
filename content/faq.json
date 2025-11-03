@@ -1,0 +1,116 @@
+[
+  {
+    "id": "faq-001",
+    "titulo": "Como acessar o SoulMV da sede pela web?",
+    "resposta": "Acesse o navegador edge e digite o endereço interno do SoulMV: https://op-prd.adventisthealth.com.br/mvautenticador-cas/login?. Faça login com seu usuário corporativo. Caso apareça erro de certificado, selecione 'Avançado' e confirme o acesso seguro.",
+    "sistema": "SoulMV",
+    "nivel": "1",
+    "categoria": "Operações Básicas",
+    "tags": ["soulmv", "Mv", "acesso", "login"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+  {
+    "id": "faq-002",
+    "titulo": "Como acessar os dados pessoais sobre o Beneficiário no SoulMV?",
+    "resposta": "No menu principal clique na lupa a esquerda e digite: 'manuntenção de beneficiários', em 'Beneficiários' clique > na lupa e espere a lupa virar um sinal de check > em 'matricula' clique nos tres pontos, na janela que se abriu, 'matricula', digite o nome do beneficiário ou o numero da carteirinha (matrícula) > clique em filtrar > escolha a matricula ativa e clique em Ok > em seguida clique no sinal de 'check' no menu superior. Neste painel estarão os dados pessoais do Beneficiário.",
+    "sistema": "SoulMV",
+    "nivel": "1",
+    "categoria": "Operações Básicas",
+    "tags": ["Mv", "Bn","acessar", "dados", "pessoais","Benefeciario","soulmv"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+  {
+    "id": "faq-003",
+    "titulo": "Como encontrar a carência do Benefeciário no SoulMV?",
+    "resposta": "No menu 'Manutenção de Beneficiários' > aba 'beneficiários' > clique na lupa, em 'matricula' clique nos 3 pontos > no painel que se abriu em 'filtro' digite o numero da matricula ou o nome do Beneficiário > clique em ok > clique no sinal de check no menu superior > os dados do Beneficiáro consta neste painel. No menu abaixo  no sexto botão 'carência' clique nele e verifique as carências do Beneficiário.",
+    "sistema": "SoulMV",
+    "nivel": "1",
+    "categoria": "Operações Básicas",
+    "tags": ["Mv", "Bn", "Benefeciario","autorizacao", "carencia", "soulmv"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+{
+    "id": "faq-004",
+    "titulo": "Onde encontrar os dados sobre os dependentes, saiba se o Beneficiário é titular ou dependente?",
+    "resposta": "No menu 'Manutenção de Beneficiários' > aba 'beneficiários' > clique na lupa, em 'matricula' clique nos 3 pontos > no painel que se abriu em 'filtro' digite o numero da matricula ou o nome do Beneficiário > clique em ok > clique no sinal de check no menu superior > os dados do Beneficiáro consta neste painel. No menu abaixo  no oitavo botão 'Família' clique nele e verifique informações familiares do Bn.",
+    "sistema": "SoulMV",
+    "nivel": "1",
+    "categoria": "Operações Básicas",
+    "tags": ["Mv", "Bn", "Benefeciario","dependentes", "dados", "Familia","soulmv", "titular"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+{
+    "id": "faq-005",
+    "titulo": "Como saber qual o plano/ carteira contratado pelo Beneficiário?",
+    "resposta": "No menu 'Manutenção de Beneficiários' > aba 'beneficiários' > clique na lupa, em 'matricula' clique nos 3 pontos > no painel que se abriu em 'filtro' digite o numero da matricula ou o nome do Beneficiário > clique em ok > clique no sinal de check no menu superior > os dados do Beneficiáro consta neste painel. A esquerda na quarta linha após o campo 'matricula', no campo 'Plano' consta o numero do plano e na frente o nome do plano atual contratado pelo Beneficiário.",
+    "sistema": "SoulMV",
+    "nivel": "1",
+    "categoria": "Operações Básicas",
+    "tags": ["Mv", "Bn", "Benefeciario","plano", "carteira", "contratado","soulmv"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+{
+    "id": "faq-006",
+    "titulo": "Como acessar o SAW pela web?",
+    "resposta": "Acesse o endereço web: https://saw.trixti.com.br/saw/Logar.do?method=abrirSAW. Coloque seu usuário e senha fornecidos pela equipe de TI.",
+    "sistema": "SAW",
+    "nivel": "1",
+    "categoria": "Operações Básicas",
+    "tags": ["SAW", "Bn", "Benefeciário", "acessar", "login", "logar"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+  {
+    "id": "faq-007",
+    "titulo": "Como encontrar os dados do beneficiário (carencia, plano, dependentes) no SAW?",
+    "resposta": " Por enquanto os dados dos beneficiários proasa sede não estão disponíveis no SAW, mas podem ser consultados no Mv (SoulMv), no campo 'manutenção de beneficiários'.",
+    "sistema": "SAW",
+    "nivel": "1",
+    "categoria": "Operações Básicas",
+    "tags": ["SAW", "Bn", "Benefeciário", "dados", "carencia", "plano", "dependentes"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+  {
+    "id": "faq-008",
+    "titulo": "Como encontrar uma guia SP/SADT no SAW?",
+    "resposta": "No menu lateral clique em > 'auditar' > 'solicitações' > no painel que se abriu 'auditoria de solicitações' utilize os filtros para encontrar as guias que precisa.",
+    "sistema": "SAW",
+    "nivel": "2",
+    "categoria": "Auditoria prévia 1 e 2",
+    "tags": ["SAW", "Bn", "encontrar", "guia", "SADT", "SP/SADT"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+  {
+    "id": "faq-009",
+    "titulo": "Como autorizar uma guia SAW?",
+    "resposta": 
+    "após filtrar a guia que deseja, clique no icone 'ferramenta' a direita para abrie a guia no SAW. Na janela que se abriu você podera analisar a guia, para autorizar você pode clicar no icone 'check' em 'autorizar todos' no painel 'procedimentos' ou no painel de 'serviços' na frente do procedimento clicar > no icone 'check' para autorizar apenas o procedimento selecionado. Aparecerá em ambos casos um segundo painel onde você poderá escrever suas considerações(será visivel para o prestador) ao finalizar clique no botão encerrar, no painel 'ações'. Assim você autoriza a guia. Observe em cima no campo 'status' que a guia mudou para 'autorizada'.",
+    "sistema": "SAW",
+    "nivel": "2",
+    "categoria": "Auditoria prévia 1 e 2",
+    "tags": ["SAW", "liberar", "autorizar", "guia", "SADT", "SP/SADT"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+  {
+    "id": "faq-010",
+    "titulo": "Como negar uma guia SAW?",
+    "resposta": 
+     "após filtrar a guia que deseja, clique no icone 'ferramenta' a direita para abrie a guia no SAW. Na janela que se abriu você podera analisar a guia, para negar você pode clicar no icone vermelho'proibição' em 'negar todos' no painel 'procedimentos' ou no painel de 'serviços' na frente do procedimento clicar > no icone vermelho'proibido' para negar apenas o procedimento selecionado. Aparecerá em ambos casos um segundo painel onde você poderá escrever suas considerações(será visivel para o prestador) ao finalizar clique no botão encerrar no painel 'ações'. Assim você nega a guia. Observe em cima no campo 'status' que a guia mudou para 'negada'.",
+    "sistema": "SAW",
+    "nivel": "2",
+    "categoria": "Auditoria prévia 1 e 2",
+    "tags": ["SAW", "Bn", "negar", "cancelar", "guia", "SADT", "SP/SADT"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  }
+
+]
+
