@@ -22,16 +22,16 @@
           <!-- MENU PRINCIPAL -->
           <nav>
             <!-- 🔹 Cada botão leva para uma página HTML separada -->
-            <!-- Exemplo: crie os arquivos 'onboarding.html', 'sistemas.html' e 'fluxos.html' dentro da mesma pasta do index.html -->
+        
             <a href="onboarding.html"><i class="fa-solid fa-user-check"></i> Onboarding</a>
            <a href="sistemas.html"><i class="fa-solid fa-network-wired"></i> Sistemas</a>
            <a href="fluxos.html"><i class="fa-solid fa-diagram-project"></i> Fluxos</a>
-            <!-- Caso queira carregar o conteúdo via JavaScript sem recarregar a página,
-                 use fetch() no main.js e injete o HTML dentro de uma <div id="conteudoPrincipal"></div> no corpo da página. -->
+            <!-- carregar o conteúdo via JavaScript sem recarregar a página,
+                 devo usar fetch() no main.js e injetar o HTML dentro de uma <div id="conteudoPrincipal"></div> no corpo da página. -->
           </nav>
         </div>
         <div style="margin-left:auto;min-width:180px;text-align:right">
-          <div style="background:rgba(255,255,255,0.12);padding:10px;border-radius:10px;display:inline-block">
+          <div style="background:rgba(227, 233, 239, 0);padding:10px;border-radius:10px;display:inline-block">
             <div style="font-weight:600">Usuário</div>
             <div class="small">Colaborador - Exemplo</div>
           </div>
@@ -39,12 +39,11 @@
       </div>
     </div>
   </header>
-
   <main class="container layout">
     <!-- Coluna esquerda: FAQs -->
     <section class="faq-list">
       <h2>Perguntas Frequentes</h2>
-      <div id="faqContainer" class="card" style="margin-top:12px"></div>
+      <div id="faqContainer" class="card" style="margin-top:0px"></div>
     </section>
 
     <!-- Coluna direita: Chat e Recursos -->
@@ -52,24 +51,24 @@
       <div class="card">
         <h3>Chat — Assistente</h3>
         <p class="small">Bot para dúvidas rápidas. (Protótipo: substitua por integração com OpenAI, Dialogflow ou Rasa)</p>
-        <div style="height:220px;border-radius:8px;background:#f8fafc;padding:10px;overflow:auto">[Chat placeholder — integração necessária]</div>
-        <div style="margin-top:10px;">
+        <div style="height:150px;border-radius:8px;background:#f8fafc;padding:10px;overflow:auto">[Chat placeholder — integração necessária]</div>
+        <div style="margin-top:40px;">
           <a class="btn" href="#">Abrir Chat</a>
         </div>
-      </div>
-      <div class="card" style="margin-top:20px">
+      <div class="card" style="margin-top:100px">
         <h3>Recursos rápidos</h3>
         <ul>
+          <li>Sugestões de conteúdos</li>
           <li>Guia de acesso remoto</li>
           <li>Checklist de turnos e escalas</li>
-          <li>Política de segurança da informação (resumo)</li>
+          <li>Política de segurança da informação</li>
         </ul>
       </div>
     </aside>
   </main>
 
   <footer>
-    Protótipo criado como projeto de extensão — Curso: Análise e Desenvolvimento de Sistemas — Desenvolvido para apresentação interna na Adventist Health
+    Protótipo criado como projeto de extensão — Curso: Análise e Desenvolvimento de Sistemas/ Unasp — Desenvolvido para apresentação interna na Adventist Health.
   </footer>
 
   <script>
