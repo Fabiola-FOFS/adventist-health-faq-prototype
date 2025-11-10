@@ -56,6 +56,33 @@ main.container.layout {
 .faq-list h2 {
   margin-top: 10px !important;
 }
+/* 🔹 Justifica o texto de todas as páginas internas */
+.page-content p,
+.page-content li,
+.page-content div,
+.page-content span {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  margin: 8px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.checklist input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  accent-color: #0b63d6; /* cor azul do seu tema */
+  cursor: pointer;
+}
+
 
 :root{--bg:#f7fafc;--card:#ffffff;--accent:#0b63d6;--muted:#6b7280}
     *{box-sizing:border-box}
