@@ -83,6 +83,40 @@ main.container.layout {
   cursor: pointer;
 }
 
+.documentos-importantes {
+  list-style: none;
+  padding-left: 0;
+}
+
+.documentos-importantes li {
+  margin-bottom: 10px;
+}
+
+.documentos-importantes a {
+  color: #0b63d6;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.documentos-importantes a:hover {
+  color: #084ba3;
+  text-decoration: underline;
+}
+
+.documentos-importantes i {
+  color: #0b63d6;
+  font-size: 1rem;
+}
+
+.documentos-importantes a:hover i {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
 
 :root{--bg:#f7fafc;--card:#ffffff;--accent:#0b63d6;--muted:#6b7280}
     *{box-sizing:border-box}
