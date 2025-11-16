@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fluxos — Adventist Health (Protótipo)</title>
+
+  <!-- CSS principal (usa mesmo visual do index/onboarding) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome (ícones consistentes em todo o site) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {--accent:#0b63d6;--bg:#f7fafc;--card:#fff;--muted:#6b7280}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:#111;}
+    header{background:linear-gradient(90deg,#0b63d6 0%,#2a9df4 100%);color:#fff;padding:22px}
+    header .container {max-width:1100px;margin:0 auto;display:flex;gap:16px;align-items:center}
+    header h1{margin:0;font-size:20px}
+    header p{margin:0 0 0 12px;opacity:0.95;font-size:14px}
+    nav.topnav{margin-left:auto;display:flex;gap:10px;align-items:center}
+    nav.topnav a{color:white;text-decoration:none;background:rgba(255,255,255,0.12);padding:8px 12px;border-radius:8px;font-weight:500;display:flex;gap:8px;align-items:center;transition:all .18s}
+    nav.topnav a:hover{background:rgba(255,255,255,0.25);transform:translateY(-2px)}
+    nav.topnav a.active{background:rgba(0,0,0,0.12)}
+    .container-page{max-width:1100px;margin:18px auto;padding:0 20px}
+    .container{display:flex;gap:20px}
+    .sidebar{width:250px;background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06);padding:14px}
+    .sidebar h3{margin-top:0;color:var(--accent)}
+    .menu-item{display:flex;align-items:center;gap:10px;padding:10px;border-radius:8px;cursor:pointer;color:#111;transition:all .18s}
+    .menu-item:hover{background:#eaf2ff;transform:translateX(4px)}
+    .menu-item.active{background:var(--accent);color:white}
+    main.content{flex:1;background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    h2{color:var(--accent);margin-bottom:10px}
+    p{line-height:1.6;margin-bottom:12px;color:#333}
+    @media(max-width:820px){
+      .container{flex-direction:column}
+      .sidebar{width:100%}
+      header .container{flex-direction:column;align-items:flex-start;gap:8px}
+      nav.topnav{margin-left:0}
+    }
+  </style>
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="container">
+      <div>
+        <h1><i class="fa-solid fa-diagram-project"></i> Fluxos — Adventist Health</h1>
+        <p class="small">Fluxos e checklists para apoio aos processos de auditoria e análise.</p>
+      </div>
+
+      <nav class="topnav">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Início</a>
+        <a href="onboarding.html"><i class="fa-solid fa-user-check"></i> Onboarding</a>
+        <a href="sistemas.html"><i class="fa-solid fa-network-wired"></i> Sistemas</a>
+        <a href="fluxos.html" class="active"><i class="fa-solid fa-diagram-project"></i> Fluxos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <div class="container-page">
+    <div class="container">
+      <!-- MENU LATERAL -->
+      <aside class="sidebar">
+        <h3><i class="fa-solid fa-sitemap"></i> Navegação</h3><br>
+        <div class="menu-item active" data-target="fluxo1"><i class="fa-solid fa-list-check"></i> Fluxo de Análise 1</div>
+        <div class="menu-item" data-target="fluxo2"><i class="fa-solid fa-layer-group"></i> Fluxo de Análise 2</div>
+        <div class="menu-item" data-target="checklist"><i class="fa-solid fa-check-circle"></i> Checklist SADT</div>
+        <div class="menu-item" data-target="negativas"><i class="fa-solid fa-envelope-open-text"></i>Cartas de Negativas</div>
+        <div class="menu-item" data-target="manuais"><i class="fa-solid fa-book"></i>Manuais da Regulação</div>
+      </aside>
+
+      <!-- navegacao (conteúdo principal) -->
+      <main id="conteudo" class="content">
+        <section id="fluxo1" class="conteudo" style="display:block">
+          <h2>Fluxo de Análise 1</h2>
+          <p>Fluxo voltado para guias de menor complexidade. Validação inicial no SoulMV, conferência de documentos e resultado com resposta padrão.</p>
+          <p><strong>Etapas:</strong><br>
+            1. Recepção da guia via SAW<br>
+            2. Conferência cadastral no SoulMV<br>
+            3. Verificação de cobertura e autorização prévia<br>
+            4. guias nivel 1 são analisadas e validadas automaticamente pelo sistema</p>
+        </section>
+
+      <!-- fluxo 2 (conteúdo dinâmico) -->
+        <section id="fluxo2" class="conteudo" style="display:none">
+          <h2>Fluxo de Análise 2</h2>
+          <p>Fluxo para guias de média complexidade. Pode requerer consulta a protocolos, contato com assistências e análise de histórico.</p>
+          <p><strong>Etapas:</strong><br>
+            1. Recepção e triagem: As guias chegam nos sistemas e os assistentes analisam<br>
+            2. Verificação documental e clínica: analisa da guia, pedido, cobertura, dados cadastrais entre outros<br>
+            3. Consulta a protocolos clínicos<br>
+            4. Encaminhamento para parecer técnico/Médico, se necessário</p>
+
+         
+      </section>
+
+      <!-- check-list (conteúdo dinâmico) -->
+        <section id="checklist" class="conteudo" style="display:none">
+  <h2>Checklist SADT</h2>
+  <p>Checklist para análise de guias SADT — itens obrigatórios para conferência:</p>
+
+  <ul class="checklist">
+    <li><label><input type="checkbox"> Tipo de atendimento correto: tipo de guia precisa bater com a solicitação</label></li>
+    <li><label><input type="checkbox"> CID e procedimento compatíveis</label></li>
+    <li><label><input type="checkbox"> Documentos anexos necessários: observar no pedido e relatório médico:
+    <li><label><input type="checkbox">a) Nome do Beneficiário</label></li>
+    <li><label><input type="checkbox">b) Validade do pedido: um pedido é valido por 3 meses
+    <li><label><input type="checkbox">c) CRM: um pedido precisa ser emitido por profissional médico habilitado</label>
+    <li><label><input type="checkbox">d) SAW: tem cobertua ?</label></li>
+    <li><label><input type="checkbox">e) Dut? Diretriz de Utilização são normas que validam quando um pedido é pertinente fretente a um pedido médico são definidas pela ANS</label></li>
+    <li><label><input type="checkbox"> Pertinencia: o pedido medico precisa ter uma justificativa razoável
+    <li><label><input type="checkbox"> Verificar autorizações anteriores</label></li>
+    <li><label><input type="checkbox"> Encaminhamento para auditoria médica quando necessário ou Aprovação/Negação imediata</label></li>
+    <li><label><input type="checkbox"> Encerrar / enviar carta de negativa ao beneficiário</label></li>
+  </ul>
+</section>
+
+      <!-- ÁREA cartas de negativas (conteúdo dinâmico) -->
+      <section id="negativas" class="conteudo" style="display:block">
+        <h2>Script de negativas</h2>
+        <p>Busque aqui scripts para as negativas e os adapte à sua necessidade.</p>
+      
+        <!-- Barra de pesquisa -->
+        <input 
+          type="text" 
+          id="searchNegativa" 
+          placeholder="Digite palavras-chave..."
+          style="width:100%;padding:10px;font-size:16px;margin-bottom:15px;"
+        />
+      
+        <!-- Resultados -->
+        <div id="resultadosNegativas"></div>
+      
+        <!-- Área de edição -->
+        <h3>Texto selecionado (editável)</h3>
+        <textarea 
+          id="editorNegativa" 
+          style="width:100%;height:200px;padding:10px;font-size:15px;"
+          placeholder="O texto aparecerá aqui após a busca..."
+        ></textarea>
+      </section>
+
+
+      <!-- ÁREA manauais da regulacao (conteúdo dinâmico) -->
+         <section id="manuais" class="conteudo" style="display:block">
+          <h2>Manuais da Regulação</h2>
+          <p>Os manuais são direcionamentos que regulam as práticas da análise de guias de rotinas específicas com regras de negócio próprias, como por exemplo: diretrizes para terapias, metodo Aba, entre outras rotinas que exigem uma análise diferenciada.</p>
+          <p><strong>clique para ser redirecionado</strong><br>
+          <ul class="documentos-importantes"></ul>
+    <a href="https://mailadventistas-my.sharepoint.com/:b:/g/personal/indiana_rodrigues_adventisthealth_com_br/EQynRa277GJNqFTIk1f2jqUB0bNTpfY7HlxNT5NjWX73hw?e=LBswyX" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-book-open"></i>
+      Rotinas de terapias
+    </a> <br>
+    <a href="https://mailadventistas-my.sharepoint.com/:b:/g/personal/julia_gomes_adventisthealth_com_br/EZZCG5ZOUC9IqCT22OjrPJABQvzLSHVY6gHya8aJZ-8OoQ?e=ExKwv9" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-book-open"></i>
+      Descrição dos processos
+    </a>
+        </p>
+        <p><strong>Lista de documentos importantes para consulta durante a análise</strong></p>
+
+<ul class="documentos-importantes">
+  <li>
+    <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.gov.br%2Fans%2Fpt-br%2Facesso-a-informacao%2Fparticipacao-da-sociedade%2Fatualizacao-do-rol-de-procedimentos%2FCorrelaoTUSS.202409Rol.2021_TUSS202509_RN647.2025.xlsx&wdOrigin=BROWSELINK" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-file-medical"></i>
+      Correlação TUSS x Rol
+    </a>
+  </li>
+  <li>
+    <a href="https://www.ans.gov.br/index.php/planos-de-saude-e-operadoras/espaco-do-consumidor/1149-verificar-cobertura-de-plano" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-scale-balanced"></i>
+      Acesso ao buscador do Rol de Procedimentos da ANS 
+    </a>
+  </li>
+  <li>
+    <a href="https://www.gov.br/ans/pt-br/assuntos/consumidor/prazos-maximos-de-atendimento" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-book-open"></i>
+      Prazos máximos de atendimento da ANS
+    </a>
+  </li>
+  <li>
+    <a href="https://www.ans.gov.br/images/stories/Legislacao/rn/Anexo_II_DUT_2021_RN_465.2021_RN648.2025.pdf" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-book-open"></i>
+      Dut - Diretriz de Utilização (ANS)
+      </a>
+     </li>
+   </ul>
+ </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- SCRIPT: troca de seções (mesma interação do onboarding) -->
+  <script>
+    const botoes = document.querySelectorAll('.menu-item');
+    const secoes = document.querySelectorAll('.conteudo');
+
+    botoes.forEach(btn => {
+      btn.addEventListener('click', () => {
+        botoes.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const alvo = btn.getAttribute('data-target');
+        secoes.forEach(sec => sec.style.display = 'none');
+        document.getElementById(alvo).style.display = 'block';
+
+        // scroll suave para topo do conteúdo em telas pequenas
+        window.scrollTo({ top: document.getElementById(alvo).offsetTop - 90, behavior: 'smooth' });
+      });
+    });
+  </script>
+  <script>
+    let negativasDB = [];
+    
+    // Carregar JSON externo carta de negativas
+    fetch("negativas.json")
+      .then(response => response.json())
+      .then(data => {
+        negativasDB = data;
+      })
+      .catch(err => console.error("Erro ao carregar negativas.json", err));
+    
+    const searchInput = document.getElementById("searchNegativa");
+    const resultadosDiv = document.getElementById("resultadosNegativas");
+    const editor = document.getElementById("editorNegativa");
+    
+    // Função de busca
+    searchInput.addEventListener("input", () => {
+      const termo = searchInput.value.toLowerCase();
+      resultadosDiv.innerHTML = "";
+    
+      if (termo === "") {
+        editor.value = "";
+        return;
+      }
+    
+      const encontrados = negativasDB.filter(n =>
+        n.titulo.toLowerCase().includes(termo) ||
+        n.texto.toLowerCase().includes(termo)
+      );
+    
+      encontrados.forEach(item => {
+        const btn = document.createElement("button");
+        btn.textContent = item.titulo;
+        btn.style = "display:block;width:100%;padding:10px;margin-bottom:8px;";
+        btn.onclick = () => editor.value = item.texto;
+        resultadosDiv.appendChild(btn);
+      });
+    });
+    </script>
+    
+</body>
+</html>

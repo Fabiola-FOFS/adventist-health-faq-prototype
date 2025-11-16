@@ -1,0 +1,29 @@
+[
+    {
+      "titulo": "Procedimento não previsto no Rol da ANS",
+      "texto": "Informamos que o procedimento solicitado em      , não  foi autorizado. A negativa está fundamentada na Lei nº 9.656/1998 e nas normas da Agência  Nacional de Saúde Suplementar (ANS), pois o procedimento não consta no Rol de  Procedimentos obrigatórios nem possui cobertura prevista em contrato. Caso deseje, é possível protocolar um pedido de revisão junto à operadora enviando  a documentação complementar pelo e-mail:                                        . O prazo para retorno é de até 7 (sete) dias úteis."
+    },
+
+    {
+      "titulo": "TÉCNICA NÃO POSSUI COBERTURA CONFORME ROL DA ANS",
+      "texto": "Informamos que a técnica (  ), vinculada ao procedimento (   ), solicitado em (    ), não foi autorizada. A negativa está fundamentada na Lei nº 9.656/1998 e nas normas da Agência  Nacional de Saúde Suplementar (ANS), pois o procedimento não consta no Rol de  Procedimentos obrigatórios nem possui cobertura prevista em contrato. Caso deseje, é possível protocolar um pedido de revisão junto à operadora enviando  a documentação complementar pelo e-mail:                             . O prazo para retorno é de até 7 (sete) dias úteis. "
+    },
+    {
+      "titulo": "INDICAÇÃO INFORMADA NÃO CUMPRE A DUT ",
+      "texto": "Informamos que o procedimento (informar procedimento), solicitado em (data), não  foi autorizado, pois a documentação médica não atende aos critérios estabelecidos  na Diretriz de Utilização (DUT) nº (número) da Agência Nacional de Saúde  Suplementar, adotada por esta operadora. A referida DUT exige os seguintes critérios  para cobertura do procedimento: (inserir de forma clara os critérios exigidos pela  DUT e qual (s) deles não foram atendidos). conforme a Resolução Normativa nº 465/2021, o cumprimento das DUTs é obrigatório  para a liberação de procedimentos, garantindo cobertura somente com indicação  clínica adequada baseada em evidências científicas.Caso deseje, é possível protocolar um pedido de revisão junto à operadora enviando  a documentação complementar pelo e-mail: reanalise.proasa@proasasaude.com.br. O prazo para retorno é de até 7 (sete) dias úteis. "
+    },
+    {
+        "titulo": "INDICAÇÃO CLÍNICA NÃO JUSTIFICA O PROCEDIMENTO SOLICITADO",
+        "texto": "Informamos que o procedimento (nome do procedimento), solicitado em (data), não  foi autorizado, pois a indicação clínica não é compatível com o procedimento  solicitado. Caso deseje, é possível protocolar um pedido de revisão junto à operadora enviando  a documentação complementar pelo e-mail: reanalise.proasa@proasasaude.com.br. O prazo para retorno é de até 7 (sete) dias úteis.  "
+    },
+    {
+        "titulo": "MATERIAL NEGADO - NÃO POSSUI COBERTURA CONFORME ROL DA  ANS",
+        "texto": " Informamos que o material (nome do material) solicitado em (data) não foi autorizado.  Após análise, constatamos que esse material não está coberto pela Agência Nacional  de Saúde Suplementar (ANS) e não está previsto no seu contrato de plano de saúde. Caso deseje, é possível protocolar um pedido de revisão junto à operadora enviando  a documentação complementar pelo e-mail: reanalise.proasa@proasasaude.com.br. O prazo para retorno é de até 7 (sete) dias "
+    },
+    {
+        "titulo": "BENEFICIÁRIO EM CARÊNCIA PARA REALIZAÇÃO DO PROCEDIMENTO",
+        "texto": "Informamos que o procedimento (nome do procedimento), solicitado em (data), não  foi autorizado porque o beneficiário ainda está em período de carência, conforme  cláusula contratual e a Lei nº 9.656/1998. Como o procedimento solicitado não atende aos prazos contratuais e legais, a  cobertura foi negada. Caso deseje, é possível protocolar um pedido de revisão junto à operadora enviando  a documentação complementar pelo e-mail: reanalise.proasa@proasasaude.com.br. O prazo para retorno é de até 7 (sete) dias úteis. "
+    }
+  ]
+  
+  

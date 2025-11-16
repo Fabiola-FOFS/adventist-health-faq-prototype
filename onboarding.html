@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Onboarding — Adventist Health (Protótipo)</title>
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* ===== ESTILOS EXCLUSIVOS DO ONBOARDING ===== */
+    :root { --accent:#0b63d6; --muted:#6b7280; }
+    .onboarding-container {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 20px;
+      margin-top: 30px;
+      align-items: flex-start;
+    }
+    .sidebar {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      padding: 18px;
+      position: sticky;
+      top: 90px;
+      height: fit-content;
+      animation: slideIn 0.5s ease;
+    }
+    @keyframes slideIn {
+      from {opacity:0; transform:translateX(-15px)}
+      to {opacity:1; transform:translateX(0)}
+    }
+    .sidebar h3 {
+      color: var(--accent);
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar li {
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #1e293b;
+      transition: 0.2s;
+    }
+    .sidebar li:hover {
+      background: #e8f0fe;
+      color: var(--accent);
+      transform: translateX(3px);
+    }
+    .sidebar li.active {
+      background: var(--accent);
+      color: white;
+    }
+    .conteudo-onboarding {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      padding: 24px;
+      animation: fadeIn 0.4s ease;
+      line-height: 1.6;
+    }
+    .conteudo-onboarding h2 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(10px)}
+      to {opacity:1; transform:translateY(0)}
+    }
+    @media (max-width:820px) {
+      .onboarding-container {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        position: relative;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ======== CABEÇALHO (MESMO DA LANDING PAGE) ======== -->
+  <header>
+    <div class="container">
+      <div class="hero">
+        <div>
+          <h1>Central de Apoio — Adventist Health</h1>
+          <p class="small">Perguntas frequentes, guias rápidos, vídeos e chatbot para apoiar integração e padronização.</p>
+          <div class="search">
+            <input type="text" placeholder="Busque por: processo, sistema, fluxos..." id="searchInput">
+          </div>
+          <nav>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Início</a>
+            <a href="onboarding.html" class="active"><i class="fa-solid fa-user-check"></i> Onboarding</a>
+            <a href="sistemas.html"><i class="fa-solid fa-network-wired"></i> Sistemas</a>
+            <a href="fluxos.html"><i class="fa-solid fa-diagram-project"></i> Fluxos</a>
+          </nav>
+        </div>
+        <div style="margin-left:auto;min-width:180px;text-align:right">
+          <div style="background:rgba(255,255,255,0.12);padding:10px;border-radius:10px;display:inline-block">
+            <div style="font-weight:600">Usuário</div>
+            <div class="small">Colaborador — Exemplo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======== CONTEÚDO PRINCIPAL ======== -->
+  <main class="container">
+    <section class="onboarding-container">
+      <!-- 🔹 Menu lateral -->
+      <aside class="sidebar">
+        <h3><i class="fa-solid fa-chalkboard-user"></i> Onboarding</h3>
+        <ul>
+          <li data-section="auditoria" class="active"><i class="fa-solid fa-file-circle-check"></i> Processo de Auditoria</li>
+          <li data-section="assistencia"><i class="fa-solid fa-stethoscope"></i> Processo de Assistência e Análise</li>
+          <li data-section="linguagens"><i class="fa-solid fa-language"></i> Linguagens da Regulação</li>
+        </ul>
+      </aside>
+
+      <!-- 🔹 Conteúdo dinâmico -->
+      <div class="conteudo-onboarding" id="conteudoOnboarding">
+        <h2>Processo de Auditoria</h2>
+        <p>O processo de auditoria tem como objetivo garantir que os atendimentos realizados sigam os critérios técnicos e regulatórios definidos pela Adventist Health. Ele envolve a análise de prontuários, relatórios clínicos e procedimentos administrativos, assegurando conformidade com os protocolos de qualidade e segurança assistencial.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======== RODAPÉ ======== -->
+  <footer>
+    Protótipo criado como projeto de extensão — Curso: Análise e Desenvolvimento de Sistemas — Desenvolvido para apresentação interna na Adventist Health
+  </footer>
+
+  <!-- ======== SCRIPT PRINCIPAL ======== -->
+ <!---- <script src="js/main.js"></script> == -->
+
+  <!-- ======== SCRIPT DO ONBOARDING ======== -->
+  <script>
+    // Conteúdos de cada seção do Onboarding
+    const secoes = {
+      auditoria: {
+        titulo: "Processo de Auditoria",
+        texto: "O processo de auditoria tem como objetivo garantir que os atendimentos realizados sigam os critérios técnicos e regulatórios definidos pela Adventist Health. Ele envolve a análise de prontuários, relatórios clínicos e procedimentos administrativos, assegurando conformidade com os protocolos de qualidade e segurança assistencial."
+
+      },
+
+      assistencia: {
+        titulo: "Processo de Assistência e Análise",
+        texto: "Esta etapa aborda a avaliação das requisições feitas a operadora por meio da rede credenciada. Aqui entram os assistentes e analistas da regulação. Atualmente divididos em niveis do 1 ao 5. Os Niveis 1 e 2 são responsáveis pela triagem inicial e análise básica dos pedidos, enquanto os Níveis 3 a 5 lidam com casos mais complexos, exigindo maior expertise e conhecimento técnico para garantir a conformidade com as diretrizes estabelecidas. É aqui que as Guias SADT são analisadas e validadas. O seu trabalho como assistente ou analista consiste em análisar estas guias seguindos as normas da ANS e as regras de negócio de cada plano/produto adquirido pelo Beneficiário."
+      },
+      linguagens: {
+        titulo: "Linguagens da Regulação",
+        texto: "A linguagem da regulação compreende os termos, padrões e classificações adotados para comunicação entre prestadores, operadoras e órgãos regulatórios. Esta seção reúne glossários, manuais de terminologia e exemplos práticos para facilitar o entendimento e o uso correto nas rotinas do sistema."
+      }
+    };
+
+    // Interação do menu lateral
+    const botoes = document.querySelectorAll('.sidebar li');
+    const conteudo = document.getElementById('conteudoOnboarding');
+
+    botoes.forEach(btn => {
+      btn.addEventListener('click', () => {
+        botoes.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const id = btn.dataset.section;
+        conteudo.innerHTML = `
+          <h2>${secoes[id].titulo}</h2>
+          <p>${secoes[id].texto}</p>
+        `;
+      });
+    });
+  </script>
+</body>
+</html>

@@ -110,7 +110,42 @@
     "tags": ["SAW", "Bn", "negar", "cancelar", "guia", "SADT", "SP/SADT"],
     "autor": "Equipe Regulação",
     "atualizacao": "2025-11-02"
+  },
+  {
+    "id": "faq-011",
+    "titulo": "Como pendenciar uma guia SAW?",
+    "resposta": 
+     "após filtrar a guia que deseja, clique no icone 'ferramenta' a direita para abrie a guia no SAW. Na janela que se abriu você podera analisar a guia, para negar você pode clicar no icone amarelo 'exclamação' em 'todos pendentes' no painel 'procedimentos' ou no painel de 'serviços' na frente do procedimento clicar > icone amarelo 'exclamação' para pedenciar apenas o procedimento selecionado. Aparecerá em ambos casos um segundo painel onde você poderá escrever suas considerações(será visivel para o prestador) ao finalizar clique no botão encerrar no painel 'ações'. Assim você pendencia a guia. Observe em cima no campo 'status' que a guia mudou para 'pendente'.",
+    "sistema": "SAW",
+    "nivel": "2",
+    "categoria": "Auditoria prévia 1 e 2",
+    "tags": ["SAW", "Bn", "pendente", "pendenciar", "guia", "SADT", "SP/SADT"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+  {
+    "id": "faq-012",
+    "titulo": "Como recuperar uma guia pendente no SAW?",
+    "resposta": 
+     "após filtrar a guia que deseja, clique no icone 'ferramenta' a direita para abrie a guia no SAW. Na janela que se abriu clique em 'Guia Tiss', no painel que se abriu, verifique em 'Dados da Solicitação' campo 'status' o staus 'pendente' com uma lupa vermelha como icone. Clique nessa lupa > clique e 'responder pendencia' no proximo painel clique em 'clique aqui para verificar auditoria'. Assim poderá analisar a guia que estava pendente",
+    "sistema": "SAW",
+    "nivel": "2",
+    "categoria": "Auditoria prévia 1 e 2",
+    "tags": ["SAW", "Bn", "pendente", "revisar","recuperar", "guia", "SADT", "SP/SADT"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
+  },
+  {
+    "id": "faq-013",
+    "titulo": "Como revisar uma guia auditada no SAW?",
+    "resposta": 
+     "após filtrar a guia que deseja, clique no icone 'ferramenta' a direita para abrie a guia no SAW. Na janela que se abriu clique em 'Guia Tiss', no painel que se abriu, verifique em 'Dados da Solicitação' campo 'status' o staus 'pendente' com uma lupa vermelha como icone. Clique nessa lupa > clique e 'responder pendencia' no proximo painel clique em 'clique aqui para verificar auditoria'. Assim poderá analisar a guia que estava pendente",
+    "sistema": "SAW",
+    "nivel": "2",
+    "categoria": "Auditoria prévia 1 e 2",
+    "tags": ["SAW", "Bn", "negar", "cancelar", "guia", "SADT", "SP/SADT"],
+    "autor": "Equipe Regulação",
+    "atualizacao": "2025-11-02"
   }
-
 ]
 

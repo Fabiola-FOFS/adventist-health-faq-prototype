@@ -1,36 +1,13 @@
-<!--
-Prototype: FAQ / Internal Support Landing Page
-Company: Adventist Health (internal prototyping)
-Author: ChatGPT (analyst & professor perspective)
-Notes: Single-file prototype for demonstration. Replace placeholder content and links.
--->
 <!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Central de Apoio — Adventist Health (Protótipo)</title>
-  <style>
-    :root{--bg:#f7fafc;--card:#ffffff;--accent:#0b63d6;--muted:#6b7280}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial,sans-serif;margin:0;background:var(--bg);color:#111}
-    header{background:linear-gradient(90deg,#0b63d6 0%,#2a9df4 100%);color:#fff;padding:28px}
-    .container{max-width:980px;margin:0 auto;padding:20px}
-    .hero{display:flex;gap:20px;align-items:center}
-    .hero h1{margin:0;font-size:28px}
-    .search{margin-top:16px}
-    input[type=text]{width:100%;padding:12px;border-radius:8px;border:1px solid #e6eef9}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
-    .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
-    .small{font-size:13px;color:var(--muted)}
-    .faq-list{margin-top:18px}
-    .faq-item{border-bottom:1px solid #f1f5f9;padding:12px 0}
-    .actions{display:flex;gap:8px;margin-top:12px}
-    .btn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
-    .secondary{background:transparent;color:var(--accent);border:1px solid rgba(11,99,214,0.12)}
-    footer{padding:18px;text-align:center;color:var(--muted);font-size:13px}
-    @media (max-width:640px){.hero{flex-direction:column;align-items:flex-start}.hero h1{font-size:22px}}
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <header>
@@ -40,10 +17,22 @@ Notes: Single-file prototype for demonstration. Replace placeholder content and 
           <h1>Central de Apoio — Adventist Health (Protótipo)</h1>
           <p class="small">Perguntas frequentes, guias rápidos, vídeos e chatbot para apoiar integração e padronização.</p>
           <div class="search">
-            <input type="text" placeholder="Busque por: processo, sistema, fluxos, 'autenticação'..." id="searchInput">
+            <input type="text" placeholder="encontre sua resposta digite: pendente" id="searchInput">
           </div>
+          <!-- MENU PRINCIPAL -->
+          <nav>
+            <!-- 🔹 Cada botão leva para uma página HTML separada -->
+        
+            <a href="onboarding.html"><i class="fa-solid fa-user-check"></i> Onboarding</a>
+           <a href="sistemas.html"><i class="fa-solid fa-network-wired"></i> Sistemas</a>
+           <a href="fluxos.html"><i class="fa-solid fa-diagram-project"></i> Fluxos</a>
+           <a href="notificacoes.html"><i class="fa-solid fa-bell"></i>Notificações</class></a>
+           <a href="produtividade.html"><i class="fa-solid fa-award"></i>Desempenho</a>
+            <!-- carregar o conteúdo via JavaScript sem recarregar a página,
+                 devo usar fetch() no main.js e injetar o HTML dentro de uma <div id="conteudoPrincipal"></div> no corpo da página. -->
+          </nav>
         </div>
-        <div style="margin-left:auto;min-width:180px;text-align:right">
+       <div style="margin-left:auto;min-width:180px;text-align:right">
           <div style="background:rgba(255,255,255,0.12);padding:10px;border-radius:10px;display:inline-block">
             <div style="font-weight:600">Usuário</div>
             <div class="small">Colaborador - Exemplo</div>
@@ -52,84 +41,102 @@ Notes: Single-file prototype for demonstration. Replace placeholder content and 
       </div>
     </div>
   </header>
-
-  <main class="container">
-    <section class="grid">
-      <div class="card">
-        <h3>Onboarding</h3>
-        <p class="small">Passo a passo para novos colaboradores: contratos, acesso aos sistemas, e introdução aos fluxos.</p>
-        <div class="actions"><a class="btn" href="#">Ver guias</a><a class="secondary" href="#">Vídeos</a></div>
-      </div>
-      <div class="card">
-        <h3>Sistemas (Softwares)</h3>
-        <p class="small">Como usar o CRM, SIGA, Portal de Rede e ferramentas internas.</p>
-        <div class="actions"><a class="btn" href="#">Tutoriais</a><a class="secondary" href="#">Cheat sheets</a></div>
-      </div>
-      <div class="card">
-        <h3>Fluxos e Processos</h3>
-        <p class="small">Diagramas, responsáveis e SLAs para cada etapa.</p>
-        <div class="actions"><a class="btn" href="#">Fluxos</a><a class="secondary" href="#">SOPs</a></div>
-      </div>
-      <div class="card">
-        <h3>Chatbot & Aulas</h3>
-        <p class="small">Interaja com o bot para dúvidas rápidas; acesse aulas gravadas e microlearning.</p>
-        <div class="actions"><a class="btn" href="#">Abrir Chat</a><a class="secondary" href="#">Catálogo</a></div>
-      </div>
-    </section>
-
+  <main class="container layout">
+    <!-- Coluna esquerda: FAQs -->
     <section class="faq-list">
-      <h2 style="margin-top:18px">Perguntas recentes</h2>
-      <div class="card" style="margin-top:12px">
-        <div class="faq-item">
-          <strong>Como solicito acesso ao novo sistema unificado?</strong>
-          <div class="small">Abra um chamado no Service Desk informando cargo, CNPJ/filial e justificativa. Tempo médio: 48h.</div>
-        </div>
-        <div class="faq-item">
-          <strong>Tem modelo de e-mail para comunicação com parceiros?</strong>
-          <div class="small">Sim — em Recursos > Modelos. Use o template 'Comunicado - Unificação de Operação'.</div>
-        </div>
-        <div class="faq-item">
-          <strong>Onde encontro o fluxo de faturamento consolidado?</strong>
-          <div class="small">Na seção 'Fluxos' — documento: "Faturamento_Unificado_v1.pdf".</div>
-        </div>
-      </div>
+      <h2>Perguntas Frequentes</h2>
+      <div id="faqContainer" class="card" style="margin-top:0px"></div>
     </section>
 
-    <section style="margin-top:20px;display:grid;grid-template-columns:1fr 320px;gap:16px;">
-      <div>
-        <h2>Recursos rápidos</h2>
-        <ul>
-          <li>Guia de acesso remoto</li>
-          <li>Checklist de turnos e escalas</li>
-          <li>Política de segurança da informação (resumo)</li>
-        </ul>
-      </div>
-
-      <aside class="card">
+    <!-- Coluna direita: Chat e Recursos -->
+    <aside>
+      <div class="card">
         <h3>Chat — Assistente</h3>
         <p class="small">Bot para dúvidas rápidas. (Protótipo: substitua por integração com OpenAI, Dialogflow ou Rasa)</p>
-        <div style="height:220px;border-radius:8px;background:#f8fafc;padding:10px;overflow:auto">[Chat placeholder — integração necessária]</div>
-        <div style="margin-top:10px;display:flex;gap:8px">
+        <div style="height:150px;border-radius:8px;background:#f8fafc;padding:10px;overflow:auto">[Chat placeholder — integração necessária]</div>
+        <div style="margin-top:40px;">
           <a class="btn" href="#">Abrir Chat</a>
-          <a class="secondary" href="#">Treinamentos</a>
         </div>
-      </aside>
-    </section>
-
+      <div class="card" style="margin-top:100px">
+        <h3>Recursos rápidos</h3>
+        <ul>
+          <li>Sugestões de conteúdos</li>
+          <li>Guia de acesso remoto</li>
+          <li>Checklist de turnos e escalas</li>
+          <li>Política de segurança da informação</li>
+        </ul>
+      </div>
+    </aside>
   </main>
 
   <footer>
-    Protótipo criado como projeto de extensão — Curso: Análise e Desenvolvimento de Sistemas — Desenvolvido para apresentação interna na Adventist Health
+    Protótipo criado como projeto de extensão — Curso: Análise e Desenvolvimento de Sistemas/ Unasp — Desenvolvido para apresentação interna na Adventist Health.
   </footer>
 
   <script>
-    // Pequena busca local (protótipo). Substituir por busca real / indexação.
-    const input = document.getElementById('searchInput');
-    input.addEventListener('keydown', (e)=>{
-      if(e.key==='Enter'){
-        alert('Busca (protótipo): ' + input.value + '\nImplemente uma API de busca para resultados reais.');
-      }
+
+
+  let faqsData = [];
+
+  async function carregarFAQs() {
+    try {
+      const resposta = await fetch('content/faq.json');
+      if (!resposta.ok) throw new Error('Erro ao carregar faq.json');
+      faqsData = await resposta.json();
+      exibirFAQs(faqsData);
+    } catch (e) {
+      console.error(e);
+      document.getElementById('faqContainer').innerHTML = '<p>Erro ao carregar FAQs.</p>';
+    }
+  }
+
+  function exibirFAQs(faqs) {
+    const container = document.getElementById('faqContainer');
+    container.innerHTML = '';
+    faqs.forEach(f => {
+      const item = document.createElement('div');
+      item.classList.add('faq-item');
+      item.innerHTML = `
+        <strong style="cursor:pointer;color:#0b63d6">${f.titulo}</strong>
+        <div class="small" style="display:none;margin-top:6px;">${f.resposta}</div>
+      `;
+      const titulo = item.querySelector('strong');
+      const resposta = item.querySelector('.small');
+      titulo.addEventListener('click', () => {
+        resposta.style.display = resposta.style.display === 'none' ? 'block' : 'none';
+      });
+      container.appendChild(item);
     });
-  </script>
+  }
+
+  // --- NOVA FUNÇÃO: busca em FAQs, sem destaque visual ---
+  function filtrarConteudo(termo) {
+    termo = termo.toLowerCase();
+
+    // Filtra as FAQs com base no termo digitado
+    const faqsFiltradas = faqsData.filter(f =>
+      f.titulo.toLowerCase().includes(termo) ||
+      f.resposta.toLowerCase().includes(termo)
+    );
+
+    // Exibe apenas as FAQs filtradas
+    if (termo) {
+      exibirFAQs(faqsFiltradas);
+    } else {
+      exibirFAQs(faqsData);
+    }
+  }
+
+  // --- Evento de pesquisa ---
+  document.addEventListener('DOMContentLoaded', () => {
+    carregarFAQs();
+
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', e => {
+      const termo = e.target.value.trim();
+      filtrarConteudo(termo);
+    });
+  });
+</script>
 </body>
 </html>
