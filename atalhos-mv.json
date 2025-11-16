@@ -1,0 +1,21 @@
+[
+  {
+    "nome": "Painel de guias",
+    "descricao": "Abre a tela de painel de guias para análise",
+    "comando": "C_AUTORIZACOES, C_AUT",
+    "palavrasChave": ["painel", "autorizar", "autorizações", "liberar", "analisar", "negar"]
+  },
+  {
+    "nome": "Manutenção de Beneficiários",
+    "descricao": "Aqui se encontra todos os dados dos beneficiários",
+    "comando": "M_USUARIO",
+    "palavrasChave": ["dados", "carência", "plano", "carteira", "titular", "e-mail"]
+  },
+  {
+    "nome": "Cadastro de Procedimentos",
+    "descricao": "Aqui é onde os procedimentos podem ser adicionados para determinado tipo de guia e assim permitir a liberação",
+    "comando": "M_PROCEDI",
+    "palavrasChave": ["procedimentos", "cadastro", "tipo", "guia"]
+  }
+]
+
